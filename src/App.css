@@ -1,0 +1,55 @@
+.App {
+  font-family: "Manrope";
+  background-color: #ffffff;
+  max-height: 100vh;
+  overflow: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.nav {
+  background-color: #e5e5e5;
+}
+.link {
+  color: gray;
+  font-weight: 500;
+  line-height: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 5px 0;
+}
+.links:nth-child(2n + 2) > .link:first-child {
+  background-color: #91ff00;
+}
+.link img {
+  height: 1.5rem;
+  object-fit: contain;
+}
+
+.search-input {
+  background: #fafafa;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+}
+.box {
+  background-color: #fcfcfc;
+  border-radius: 4px;
+}
+.card img {
+  height: 30px;
+}
+.box button {
+  background-color: #b4cd93;
+}
+.info div {
+  background-color: #7c8800;
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    overflow: auto;
+  }
+  .link span {
+    display: none;
+  }
+}
