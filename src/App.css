@@ -2,7 +2,6 @@
   font-family: "Manrope";
   background-color: #ffffff;
   max-height: 100vh;
-  overflow: hidden;
 }
 ::-webkit-scrollbar {
   width: 0;
@@ -44,7 +43,14 @@
 .info div {
   background-color: #7c8800;
 }
-
+.info span {
+  font-family: "Manrope";
+  font-style: normal;
+  line-height: 24px;
+}
+.bgB4CD93 {
+  background-color: #b4cd93;
+}
 @media screen and (max-width: 768px) {
   .App {
     overflow: auto;

@@ -1,6 +1,9 @@
 import React from "react";
+import { Aside } from "../Components";
+const Main = (props) => {
+  let PROP = props;
 
-const Main = () => {
+  // console.log(seconds);
   return (
     <div className="md:p-8 p-3 flex flex-col w-full overflow-auto">
       <div className="main-head flex justify-between items-center w-full mb-12">
@@ -19,7 +22,7 @@ const Main = () => {
             />
           </svg>
           <input
-            className="search-input border md:w-full w-4/5 pl-8 py-2 md:h-10 h-7"
+            className="search-input border md:w-full w-100 pl-8 py-2 md:h-10 h-7"
             type="text"
             placeholder="Search User, Payments..."
           />
@@ -45,93 +48,23 @@ const Main = () => {
       <div className="main-body w-full md:flex">
         <div className="md:w-2/3 m-4">
           <h3 className="text-lg font-bold my-10">In last 30 days,</h3>
-          <div className="info flex justify-between">
-            <div className="flex flex-col md:w-36 w-32 px-4 py-2 rounded-lg text-gray-200  text-xs ">
+          <div className="info flex justify-between gap-2">
+            <div className="flex flex-col justify-center md:w-40 w-32 px-4 py-2 rounded-lg text-gray-200 md:text-sm text-xs ">
               <span className="font-semibold text-lg">300000</span>
               <span>Payments</span>
             </div>
-            <div className="flex flex-col md:w-36 w-32 px-4 py-2 rounded-lg text-gray-200  text-xs ">
-              <span className="font-semibold text-lg">300000</span>
+            <div className="flex flex-col justify-center md:w-40 w-32 px-4 py-2 rounded-lg text-gray-200 md:text-sm text-xs ">
+              <span className="font-semibold text-lg">250</span>
               <span>New users</span>
             </div>
-            <div className="flex flex-col md:w-36 w-32 px-4 py-2 rounded-lg text-gray-200  text-xs ">
-              <span className="font-semibold text-lg">300000</span>
+            <div className="flex flex-col justify-center md:w-40 w-32 px-4 py-2 rounded-lg text-gray-200 md:text-sm text-xs ">
+              <span className="font-semibold text-lg">$300,000</span>
               <span>Revenue generated</span>
             </div>
           </div>
         </div>
-        {/*  */}
-        <div className="md:w-1/3  flex flex-col gap-8">
-          <div className="box md:p-4 md:px-4 mx-5 p-5 text-center">
-            <h3 className="text-lg font-bold my-10">Recent Transactions</h3>
-            <div className="card flex justify-between items-center text-gray-500">
-              <span className="flex items-center font-semibold text-black gap-2 ">
-                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" />
-                <h2>Jasraj</h2>
-              </span>
-              <span>40k+ sale</span>
-              <span>Revenue</span>
-            </div>
-            <div className="card flex justify-between items-center text-gray-500">
-              <span className="flex items-center font-semibold text-black gap-2">
-                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" />
-                <h2>Jasraj</h2>
-              </span>
-              <span>40k+ sale</span>
-              <span>Revenue</span>
-            </div>
-            <div className="card flex justify-between items-center text-gray-500">
-              <span className="flex items-center font-semibold text-black gap-2">
-                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" />
-                <h2>Jasraj</h2>
-              </span>
-              <span>40k+ sale</span>
-              <span>Revenue</span>
-            </div>
-            <button
-              class="h-8 px-6 m-2 font-semibold rounded-md border border-slate-200 text-slate-900"
-              type="button"
-            >
-              View All Users
-            </button>
-          </div>
-          <div className="box md:p-2 md:px-4 mx-5 text-center">
-            <h3 className="text-lg font-bold my-10 text-center">
-              Recent Transactions
-            </h3>
-            <div className="card flex justify-between items-center text-gray-500 gap-2">
-              <span className="flex items-center font-semibold text-black gap-2">
-                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" />
-                <h2>Jasraj</h2>
-              </span>
-              <span>40k+ sale</span>
-              <span>Revenue</span>
-            </div>
-            <div className="card flex justify-between items-center text-gray-500">
-              <span className="flex items-center font-semibold text-black gap-2">
-                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" />
-                <h2>Jasraj</h2>
-              </span>
-              <span>40k+ sale</span>
-              <span>Revenue</span>
-            </div>
-            <div className="card flex justify-between items-center text-gray-500">
-              <span className="flex items-center font-semibold text-black gap-2">
-                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" />
-                <h2>Jasraj</h2>
-              </span>
-              <span>40k+ sale</span>
-              <span>Revenue</span>
-            </div>
-            <button
-              class="h-8 px-6 m-2 font-semibold rounded-md border border-slate-200 text-slate-900"
-              type="button"
-            >
-              View All Users
-            </button>
-          </div>
-          <div className="box time"></div>
-        </div>
+        {/* aside */}
+        <Aside PROP={PROP} />
       </div>
     </div>
   );

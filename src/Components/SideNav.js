@@ -3,8 +3,8 @@ import logo from "../assets/logo.png";
 
 const SideNav = () => {
   return (
-    <nav className="nav md:h-screen md:w-1/5 flex items-center gap-3  justify-center md:grid md:gap-12 md:p-4 p-3 ">
-      <div className="logo md:w-full w-1/2">
+    <nav className="nav md:h-screen md:w-1/5 flex items-center gap-3 justify-between md:justify-center md:grid md:gap-12 md:p-4 p-3 ">
+      <div className="logo md:w-full w-1/3">
         <img className="" src={logo} alt="logo"></img>
       </div>
       <div className="links flex md:flex-col gap-4 ">
