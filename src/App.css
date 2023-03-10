@@ -51,6 +51,18 @@
 .bgB4CD93 {
   background-color: #b4cd93;
 }
+.text4C4C4C {
+  color: #4c4c4c;
+}
+.textB3B3B3 {
+  color: #b3b3b3;
+}
+.text9F9F9F {
+  color: #9f9f9f;
+}
+.bgE5E5E5 {
+  background-color: #e5e5e5;
+}
 @media screen and (max-width: 768px) {
   .App {
     overflow: auto;
