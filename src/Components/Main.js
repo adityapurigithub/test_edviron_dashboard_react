@@ -31,7 +31,7 @@ const Main = (props) => {
         <div className="user-info flex justify-between items-center md:gap-8 gap-1">
           <div className="flex items-center gap-1">
             <img
-              className="border rounded-full md:h-10 h-6 md:flex hidden"
+              className="border rounded-full md:h-10 h-6"
               src="https://cdn-icons-png.flaticon.com/128/9860/9860741.png"
             />
             <div className="flex flex-col md:text-sm text-xs font-semibold text-gray-600">
@@ -108,7 +108,7 @@ const Main = (props) => {
                 <tr className="text-start h-12">
                   <th>User</th>
                   <th>Status</th>
-                  <th className="w-48">Rating</th>
+                  <th className="w-40">Rating</th>
                   <th>Quantity</th>
                   <th>Amount</th>
                 </tr>
@@ -120,7 +120,7 @@ const Main = (props) => {
                       class="border rounded-full md:h-10 h-6 md:flex hidden"
                       src="https://cdn-icons-png.flaticon.com/128/9860/9860741.png"
                     />
-                    <span>Jasraj</span>
+                    <span className="text-slate-500 font-semibold">Mulay</span>
                   </td>
                   <td>
                     <span className="bg-slate-200 px-2 p-1 rounded">
@@ -129,11 +129,11 @@ const Main = (props) => {
                   </td>
                   <td>
                     <div className="flex items-center justify-center gap-1">
-                      <span className="bg-gray-100 rounded-md flex h-2 w-1/3">
+                      <span className="bg-gray-100 rounded-md flex h-1 w-1/3">
                         <span className="bg-gray-600 w-1/3 rounded-md"></span>
                       </span>
                       <span>40%</span>
-                      <span className="p-1 bg-slate-100 rounded">!4%</span>
+                      <span className="p-1 bg-slate-100 rounded">&uarr;4%</span>
                     </div>
                   </td>
                   <td>400</td>
@@ -146,7 +146,7 @@ const Main = (props) => {
                       class="border rounded-full md:h-10 h-6 md:flex hidden"
                       src="https://cdn-icons-png.flaticon.com/128/9860/9860741.png"
                     />
-                    <span>Lakshay</span>
+                    <span className="text-slate-500 font-semibold">Tarun</span>
                   </td>
                   <td>
                     <span className="bg-yellow-200 px-2 p-1 rounded">
@@ -155,11 +155,11 @@ const Main = (props) => {
                   </td>
                   <td>
                     <div className="flex items-center justify-center gap-1">
-                      <span className="bg-gray-100 rounded-md flex h-2 w-1/3">
-                        <span className="bg-gray-600 w-1/3 rounded-md"></span>
+                      <span className="bg-gray-100 rounded-md flex h-1 w-1/3">
+                        <span className="bg-gray-600 w-1/2 rounded-md"></span>
                       </span>
-                      <span>40%</span>
-                      <span className="p-1 bg-slate-100 rounded">!4%</span>
+                      <span>57%</span>
+                      <span className="p-1 bg-slate-100 rounded">&darr;8%</span>
                     </div>
                   </td>
                   <td>200</td>
@@ -172,7 +172,7 @@ const Main = (props) => {
                       class="border rounded-full md:h-10 h-6 md:flex hidden"
                       src="https://cdn-icons-png.flaticon.com/128/9860/9860741.png"
                     />
-                    <span>Aditya</span>
+                    <span className="text-slate-500 font-semibold">Jasraj</span>
                   </td>
                   <td>
                     <span className="bg-slate-200 px-2 p-1 rounded">
@@ -181,11 +181,13 @@ const Main = (props) => {
                   </td>
                   <td>
                     <div className="flex items-center justify-center gap-1">
-                      <span className="bg-gray-100 rounded-md flex h-2 w-1/3">
-                        <span className="bg-gray-600 w-1/3 rounded-md"></span>
+                      <span className="bg-gray-100 rounded-md flex h-1 w-1/3">
+                        <span className="bg-gray-600 w-11/12 rounded-md"></span>
                       </span>
-                      <span>40%</span>
-                      <span className="p-1 bg-slate-100 rounded">!4%</span>
+                      <span>89%</span>
+                      <span className="p-1 bg-slate-100 rounded">
+                        &uarr;19%
+                      </span>
                     </div>
                   </td>
                   <td>40,000</td>
@@ -199,21 +201,17 @@ const Main = (props) => {
                       class="border rounded-full md:h-10 h-6 md:flex hidden"
                       src="https://cdn-icons-png.flaticon.com/128/9860/9860741.png"
                     />
-                    <span>Ojha</span>
-                  </td>
-                  <td>
-                    <span className="bg-slate-200 px-2 p-1 rounded">
-                      Verified
+                    <span className="text-slate-500 font-semibold">
+                      Lakshay
                     </span>
                   </td>
                   <td>
-                    <div className="flex items-center justify-center gap-1">
-                      <span className="bg-gray-100 rounded-md flex h-2 w-1/3">
-                        <span className="bg-gray-600 w-1/3 rounded-md"></span>
-                      </span>
-                      <span>40%</span>
-                      <span className="p-1 bg-slate-100 rounded">!4%</span>
-                    </div>
+                    <span className="text-gray-400 p-1">Unverified</span>
+                  </td>
+                  <td>
+                    <span className="text-gray-400 p-1">
+                      No ratings available
+                    </span>
                   </td>
                   <td>0</td>
 
@@ -226,7 +224,7 @@ const Main = (props) => {
                       class="border rounded-full md:h-10 h-6 md:flex hidden"
                       src="https://cdn-icons-png.flaticon.com/128/9860/9860741.png"
                     />
-                    <span>Mulay</span>
+                    <span className="text-slate-500 font-semibold">Aditya</span>
                   </td>
                   <td>
                     <span className="bg-slate-200 px-2 p-1 rounded">
@@ -235,11 +233,11 @@ const Main = (props) => {
                   </td>
                   <td>
                     <div className="flex items-center justify-center gap-1">
-                      <span className="bg-gray-100 rounded-md flex h-2 w-1/3">
-                        <span className="bg-gray-600 w-1/3 rounded-md"></span>
+                      <span className="bg-gray-100 rounded-md flex h-1 w-1/3">
+                        <span className="bg-gray-600 w-1/2 rounded-md"></span>
                       </span>
-                      <span>40%</span>
-                      <span className="p-1 bg-slate-100 rounded">!4%</span>
+                      <span>50%</span>
+                      <span className="p-1 bg-slate-100 rounded">&darr;6%</span>
                     </div>
                   </td>
                   <td>30</td>
@@ -253,7 +251,7 @@ const Main = (props) => {
                       class="border rounded-full md:h-10 h-6 md:flex hidden"
                       src="https://cdn-icons-png.flaticon.com/128/9860/9860741.png"
                     />
-                    <span>Mulay</span>
+                    <span className="text-slate-500 font-semibold">Ojha</span>
                   </td>
                   <td>
                     <span className="bg-yellow-200 px-2 p-1 rounded">
@@ -261,12 +259,12 @@ const Main = (props) => {
                     </span>
                   </td>
                   <td>
-                    <div className="flex items-center justify-center gap-1">
-                      <span className="bg-gray-100 rounded-md flex h-2 w-1/3">
-                        <span className="bg-gray-600 w-1/3 rounded-md"></span>
+                    <div className="flex items-center justify-center gap-1 ">
+                      <span className="bg-gray-100 rounded-md flex h-1 w-1/3">
+                        <span className="bg-gray-600 w-8/12 rounded-md"></span>
                       </span>
-                      <span>40%</span>
-                      <span className="p-1 bg-slate-100 rounded">!4%</span>
+                      <span>64%</span>
+                      <span className="p-1 bg-slate-100 rounded">&uarr;7%</span>
                     </div>
                   </td>
                   <td>400</td>
